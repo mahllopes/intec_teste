@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intec</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="javascript/slider.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <table>
+            <tr>
+                <td id="logo">Logo</td>
+                <td id="logotipo">INTEC</td>
+                <td id="navegacao">
+                    <a href="index.html">Início</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contatos.html">Contatos</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- APRESENTAÇÃO -->
+    <table id="base">
+        <tr>
+            <td id="baseTexto">
+                <h1 style="font-size: 80px;">INTEC</h1>
+                <h2 style="color: rgb(161, 33, 33)">Área de atuação</h2>
+                <p>
+                    TEXTO 1 - descrição descrição descrição descrição descrição
+                    descrição descriçãodescriçãodescrição descrição
+                    descriçãodescriçãodescrição descrição descrição descrição
+                </p>
+            </td>
+            <td id="baseImagem"><img src="imagens/capa1000x1000.png" width="700" /></td>
+        </tr>
+    </table>
+
+    <!-- PRODUTOS -->
+    <div id="produtos">
+        <h1>Produtos</h1>
+    </div>
+    <section class="slider">
+        <div class="sliderConteudo">
+            <input type="radio" name="btnRadio" id="radio1">
+            <input type="radio" name="btnRadio" id="radio2">
+            <input type="radio" name="btnRadio" id="radio3">
+            <input type="radio" name="btnRadio" id="radio4">
+
+            <div class="slideBox primeiro">
+                <a href="produto1.html"><img class="imgDesktop" src="imagens/1.png" alt="slide 1"></a>
+                <a href="#"><img class="imgMobile" src="#" alt="slide 1"></a>
+            </div>
+
+            <div class="slideBox">
+                <a href="produto1.html"><img class="imgDesktop" src="imagens/2.png" alt="slide 2"></a>
+                <a href="#"><img class="imgMobile" src="#" alt="slide 2"></a>
+            </div>
+
+            <div class="slideBox">
+                <a href="produto1.html"><img class="imgDesktop" src="imagens/3.png" alt="slide 3"></a>
+                <a href="#"><img class="imgMobile" src="#" alt="slide 3"></a>
+            </div>
+
+            <div class="slideBox">
+                <a href="produto1.html"><img class="imgDesktop" src="imagens/4.png" alt="slide 4"></a>
+                <a href="#"><img class="imgMobile" src="#" alt="slide 4"></a>
+            </div>
+
+            <div class="navAuto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            <div class="navManual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <div id="contato">
+        <h1>Contatos</h1>
+
+        <div id="inner_div">
+            <table id="inner_table">
+                <tr>
+                    <td id="subtitulo">Nome do Responsável - Local</td>
+                    <td id="subtitulo">Nome do Responsável - Local</td>
+                    <td id="subtitulo">Endereço </td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-phone"></i> &nbsp; +55 54 9999-9999</td>
+                    <td><i class="fas fa-phone"></i> &nbsp; +55 54 9999-9999</td>
+                    <td> Rua exemplo exemplo, número, Bairro exemplo</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-at"></i> &nbsp; email@email.com</td>
+                    <td><i class="fas fa-at"></i> &nbsp; email@email.com</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.7043963529622!2d-52.320068725165164!3d-27.664616025038182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e315d5cfa9f915%3A0xd50534d55f619243!2sINTEC!5e0!3m2!1spt-BR!2sbr!4v1713636590989!5m2!1spt-BR!2sbr"
+            width="100%" height="350" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <h3>INTEC</h3>
+        <div id="produtosRodape">
+            <h4 id="subtitulo">Produtos</h4>
+            <ul>
+                <li><a href="produto1.html">Produto 1</a></li>
+                <li><a href="produto1.html">Produto 2</a></li>
+                <li><a href="produto1.html">Produto 3</a></li>
+                <li><a href="produto1.html">Produto 4</a></li>
+            </ul>
+        </div>
+
+        <div id="navegacaoRodape">
+            <h4 id="subtitulo">Navegação</h4>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </div>
+
+        <div id="socialRodape">
+            <h4 id="subtitulo">Redes Sociais</h4>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <p id="assinatura">INTEC, 2024</p>
+</body>
+
+</html>
