@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 1px;
+  margin: 1px;
+  scroll-behavior: smooth;
+  background-color: rgb(255, 255, 255);
+}
+
+/*HEADER*/
+header {
+    width: 92%;
+    padding: 6vh 4vw;
+    position: static;
+    font-weight: bold;
+    background: transparent;
+    color: rgb(0, 0, 0);
+  }
+  
+  header table {
+    width: 100%;
+  }
+  
+  #navegacao {
+      text-align: right;
+  }
+  
+  #navegacao a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      margin-left: 4vw;
+      transition: 0.4s ease-in-out;
+  }
+  
+  #navegacao a:hover {
+      border-bottom: 2px solid rgb(161, 33, 33);
+  }
+
+  @media (max-width: 768px) {
+    header table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #navegacao {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    #navegacao a {
+      margin: 0 10px;
+    }
+  }
+
+
+/*FOOTER*/
+footer {
+  background-color: #ffffff;
+  color: #a52a2a;
+  padding: 20px 0;
+
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#produtosRodape ul, #socialRodape ul, #navegacaoRodape ul {
+  padding: 0;
+  list-style-type: none
+}
+
+#produtosRodape a, #socialRodape a, #navegacaoRodape a{
+  color: #303030;
+  text-decoration: none;
+  font-size: small;
+}
+
+#socialRodape a {
+  font-size: 20px;
+}
+
+#assinatura{
+  font-size: 13px;
+  text-align: center;
+  color: #666666;
+}
+
+/*BASES*/
+#base {
+  width: 100%;
+  border: 2vh solid rgb(255, 255, 255);
+  color: #303030;
+  text-align: left;
+}
+
+#base tr td {
+  width: 50%;
+  text-align: justify;
+}
+
+#base2 h1{
+  color: #303030;
+  font-size: 80px;
+  padding-left: 20%;
+  text-align: left;
+}
+
+#base2 tr td {
+  width: 50%;
+  text-align: justify;
+}
+
+#baseTexto {
+  width: 75% !important;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0px 8% ;
+  background-color: rgb(255, 255, 255);
+  color: #303030;
+  font-weight: normal;
+}
+
+#baseTexto h1 {
+  font-size: 80px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+#baseTexto table tr td {
+  width: 20% !important;
+  text-align: left;
+  
+}
+
+#baseImagem {
+  width: 100%;
+  height: 95vh;
+  background-repeat: no-repeat;
+}
+
+/*PRODUTOS - HOME*/
+#produtos {
+  width: 92%;
+  padding: 6vh 4vw;
+  font-weight: bold;
+  background-color: #fff;
+  color: #303030;
+}
+
+#produtos-home {
+  width: 1250px;
+  columns:4;
+  column-gap: 3%;
+  z-index:1;
+  transition:0.4s ease-in-out;
+  
+}
+
+#produtos-home a {
+  width:100%;
+  height:auto;
+  text-decoration: none;
+  margin:4.5% 0px;
+  transition:0.4s ease-in-out;
+  background-color: #fff;
+  color: #303030;
+}
+
+#produtos-home img {
+  width: 100%;
+  height: auto;
+  margin: 4.5% 0;
+  transition: 0.4s ease-in-out;
+}
+
+#produtos-home img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #produtos-home a {
+    width: 100%;
+  }
+
+  #baseTexto h1 {
+    font-size: 40px;
+  }
+
+  #baseImagem {
+    height: 30vh;
+  }
+}
+
+/*CONTATO - HOME*/
+#contato {
+  width: 92%;
+  padding: 15vh 4vw 17vh;
+  background-color: rgb(255, 255, 255);
+  color: #303030;
+}
+
+#contato table {
+  width: 100%;
+}
+
+#contato table tr td {
+  width: 35vw;
+}
+
+#inner_div table {
+  width: 90vw;
+}
+
+#inner_div table #subtitulo {
+  font-weight:bold;
+  color: brown;
+}
+
+#inner_table tr td {
+  padding: 1px 4% !important;
+}
+
+@media (max-width: 768px) {
+  #contato table tr td {
+    width: 100%;
+  }
+}
+
+
+/*PAGINA SOBRE*/
+#colunaTexto td{
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;    
+  padding: 10% 8% 5% 8%;
+  font-weight: normal;
+}
+
+/*PÁGINA PRODUTOS*/
+#produtoLista {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#produtoLista img {
+  margin-right: 20px; 
+  transition: 0.4s ease-in-out;
+}
+
+#produtoLista img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#descricaoProduto a{
+  margin: 0 20px 10px;
+  text-decoration: none;
+  font-size:x-large;
+}
+
+#descricaoProduto p{
+  margin: 20px 20px 10px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/*PÁGINA CONTATOS*/
+#btnWpp{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: brown;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+}
+
+/*PÁGINA DO PRODUTO*/
+.botao-voltar {
+  background-color: #fff;
+  color: brown;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.botao-voltar:hover {
+  background-color: rgb(255, 255, 255);
+  color: #303030;
+}
+
+.botao-voltar i {
+  margin-right: 5px;
+}
+
+#fileiraImagem {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#fileiraImagem img{
+  width: 100%;
+  margin-right: 20px; 
+  transition: 0.4s ease-in-out;
+}
+
+#quadroImagem {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  font-weight: normal;
+  align-items:center;
+  justify-content: center;
+}
+
+#quadroImagem img{
+  margin-right: 20px;
+  margin-left: 20px;
+}
